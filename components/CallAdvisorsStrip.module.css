@@ -1,0 +1,65 @@
+.call-advisors-strip {
+    background-color: #182e4a; /* Customize the background */
+    padding: 2px 0px;
+    max-width: 1800px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    font-size: 1rem;
+    border-top: 1px solid #050e1b; /* Optional styling for separation */
+  }
+  
+  .phone-icon {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.4em;
+    color: #f3f3f3;
+  }
+  .left-strip-content {
+    align-items: left;
+    margin-left: 20px;
+  }
+  .advisor-text,
+  .advisor-number {
+    font-weight: bold;
+    margin-right: 5px;
+    color: #fff;
+  }
+  
+  .advisor-number {
+    color: #f7f7f7; /* You can choose a color for the contact number */
+  }
+  /* Social icons styling */
+  .social-icons-strip {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+  }
+  
+  .social-icons-strip a {
+    color: #ecf0f1;
+    margin: 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+  }
+  
+  .social-icons-strip a:hover {
+    color: #3498db;
+  }
+  
+  @media (max-width: 480px) {
+    .phone-icon {
+      font-size: 0.6em;
+      margin-right: 5px;
+    }
+    .advisor-text,
+    .advisor-number {
+      font-size: 0.5em;
+    }
+  
+    .social-icons-strip a {
+      font-size: 10px;
+      margin: 5px;
+    }
+  }
+  

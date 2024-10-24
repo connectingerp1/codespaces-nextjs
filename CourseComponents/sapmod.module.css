@@ -1,0 +1,187 @@
+.glow-text {
+    font-size: 2rem; /* Adjust this value as needed */
+    margin-top: 1vh; /* Adjust this value if there's too much space */
+    color: #00e1ff !important; /* Base text color */
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+  }
+  
+  .glow-text span {
+    opacity: 0;
+    animation: glow 1.5s infinite ease-in-out alternate;
+    text-shadow:
+      1px 1px 1px #0a0b0a,
+      /* Base shadow for 3D effect */ 2px 2px 2px #090909,
+      /* Deeper shadow */ 3px 3px 3px #080808,
+      /* Deeper shadow */ 4px 4px 4px #2bd3fd,
+      /* Deeper shadow */ 0px 0px 5px #279cb4,
+      /* Initial blue glow */ 0px 0px 10px #0e4981; /* Initial blue glow */
+  }
+  
+  @keyframes glow {
+    0% {
+      opacity: 0;
+      text-shadow:
+        1px 1px 1px #0a0b0a,
+        2px 2px 2px #090909,
+        3px 3px 3px #080808,
+        4px 4px 4px #070707,
+        0px 0px 5px #0b788e,
+        0px 0px 5px #0a6e8f;
+    }
+    100% {
+      opacity: 1;
+      text-shadow:
+        1px 1px 1px #0a0b0a,
+        2px 2px 2px #090909,
+        3px 3px 3px #080808,
+        4px 4px 4px #070707,
+        0px 0px 20px #146a7b,
+        0px 0px 20px #076f92;
+    }
+  }
+  
+  .sap-mod-container h1 {
+    text-align: center;
+    margin-bottom: 2.7rem;
+    font-size: 34px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 8px;
+    background: linear-gradient(
+      90deg,
+      rgba(1, 1, 98, 1) 35%,
+      rgba(3, 163, 196, 1) 49%,
+      rgba(2, 2, 85, 1) 62%
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  
+  .sap-mod-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow:
+      0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    gap: 1.5rem;
+    max-width: 1800px;
+    width: 97.5%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    align-items: center; /* Center items horizontally */
+  }
+  sap-mod-button-container .download-gif {
+    width: 40px;
+    height: 60px;
+  }
+  .sap-mod-button-container .sap-mod-button {
+    margin-right: 10px;
+  }
+  
+  .sap-mod-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  .download-video {
+    width: 8%;
+    margin-bottom: -20px;
+    border-radius: 30px;
+  }
+  
+  @media (min-width: 768px) {
+    .sap-mod-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center; /* Center cards horizontally */
+    }
+  
+    .sap-mod-card {
+      width: 45%; /* Adjust width of cards on larger screens */
+      margin: 10px; /* Add some margin between cards */
+    }
+  }
+  
+  /* Additional styles from your original CSS */
+  .sap-mod-card {
+    flex: 1;
+    background-color: #e3e3e3;
+    color: black;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+    transform: scale(1);
+    box-shadow:
+      0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .sap-mod-card:hover {
+    transform: scale(1.05);
+    box-shadow:
+      0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .sap-mod-button {
+    background-color: white;
+    color: black;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+    transform: scale(1);
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  
+  .sap-mod-button:hover {
+    background-color: rgba(skyblue, 0.8);
+    transform: scale(1.05);
+    box-shadow:
+      0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .sap-mod-card-secondary {
+    background-color: var(--card);
+    color: var(--card-foreground);
+  }
+  
+  .sap-mod-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #50edb0;
+    transition: background-color 0.3s;
+    border-radius: 0.5rem;
+    transform: scale(1);
+    box-shadow:
+      0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .sap-mod-card-content:hover {
+    background-color: #50edb0;
+    transform: scale(1.05);
+    box-shadow:
+      0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .sap-mod-card-content.alt {
+    background-color: rgba(var(--muted), 0.8);
+  }
+  
+  .sap-mod-note {
+    color: red;
+    margin-top: 10px;
+  }
+  

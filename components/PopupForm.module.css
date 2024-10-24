@@ -1,0 +1,194 @@
+.popup-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.25
+    ); /* Semi-transparent background for the overlay */
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    padding: 20px;
+  }
+  
+  .popup-form-container {
+    background: transparent; /* Semi-transparent background for the form container */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1010; /* Ensure it's above the overlay */
+    margin-bottom: 80px;
+  }
+  
+  .close-button-pf-2 {
+    position: absolute;
+    top: 10px; /* Adjusted for better visibility */
+    right: 10px;
+    color: black;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 1020;
+    transition: none;
+  }
+  
+  .close-button-pf-2:hover {
+    color: #4a4a4a;
+    background-color: transparent;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo-ppf {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    margin-left: -30px;
+    transition: all 0.3s ease-in-out;
+    shadow:
+      0 0 10px #ffffff,
+      0 0 20px #ffffff,
+      0 0 30px #ffffff; /* Glow effect */
+  }
+  
+  .header-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2277d3;
+    margin: 0;
+    text-shadow:
+      0 0 10px #ffffff,
+      0 0 20px #ffffff,
+      0 0 30px #ffffff; /* Glow effect */
+    transition: text-shadow 0.3s ease-in-out;
+  }
+  
+  .popup-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .popup-form-container form input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  .popup-form-container form input::placeholder {
+    color: #999;
+  }
+  
+  .terms-checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.5;
+    color: white;
+  }
+  
+  .terms-checkbox input[type='checkbox'] {
+    margin-right: 5px;
+  }
+  
+  .terms-checkbox label {
+    color: #000000;
+  }
+  
+  .terms-checkbox a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+  }
+  
+  .terms-checkbox a:hover {
+    text-decoration: underline;
+  }
+  
+  .popup-form-container form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2277d3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 2px;
+  }
+  
+  .popup-form-container form button:hover {
+    background-color: #4343d0;
+  }
+  /* PopupForm.css */
+  .no-scroll {
+    overflow: hidden;
+  }
+  
+  /* Media Query for Responsive Adjustments */
+  @media (max-width: 480px) {
+    .popup-form-overlay {
+      padding: 10px;
+    }
+  
+    .popup-form-container {
+      padding: 15px;
+      width: 100%;
+      max-width: 280px;
+      margin-right: -85px;
+      position: absolute;
+      top: 10%;
+      right: -2%;
+      transform: translateX(-50%);
+    }
+  
+    .popup-form-container form input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      font-size: 12px;
+    }
+  
+    .popup-form-container form button {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .header-container {
+      flex-direction: column;
+      align-items: center; /* Center content */
+    }
+  
+    .header-container .logo-ppf {
+      width: 50px; /* Adjusted size */
+      height: 50px; /* Adjusted size */
+      margin: 0 0 10px 0; /* Adjusted margins */
+    }
+  
+    .header-container h2 {
+      font-size: 18px; /* Adjusted font size */
+      margin: 0; /* Removed margin */
+    }
+  }
+  
