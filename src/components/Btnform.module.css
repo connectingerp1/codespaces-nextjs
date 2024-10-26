@@ -1,0 +1,221 @@
+/* :root {
+    --primary: turquoise;
+    --primary-dark: #191825;
+    --primary-blue: #865dff;
+    --primary-light-blue: #c4b1ff;
+    --secondary-dark: #27253f;
+    --secondary-dark2: #191825;
+    --transparent-pink: #e384ff;
+    --gradient-angle: 0deg;
+  } */
+  
+  .BtnSuperContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+    color: white;
+  }
+  
+  .BtnClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .BtnContainer {
+    border-radius: 20px;
+    border: 1px solid #865dff;
+    background-color: #27253f;
+    padding: 50px;
+    box-shadow: 0 0 20px #27253f;
+    width: 60vw;
+    max-width: 800px;
+    transition: 0.15s all;
+    display: flex;
+    flex-direction: column;
+    transform-style: preserve-3d;
+  }
+  
+  .BtnSent {
+    animation: successAnime 4s linear forwards;
+  }
+  
+  .BtnHidden {
+    opacity: 1;
+    transform: translateZ(0);
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .BtnHidden {
+    opacity: 0;
+    transform: translateZ(15rem);
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .BtnMail {
+    background: linear-gradient(to bottom, #c4b1ff, #865dff);
+    position: absolute;
+    inset: 0;
+    font-size: 30px;
+    color: black;
+    border-radius: inherit;
+    transform: rotateX(0deg) rotateZ(0deg) translateZ(-5px) translateY(0);
+  }
+  
+  .BtnTopHeading h1 {
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .BtnButtonContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .BtnBlock {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .BtnContactForm {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .BtnField {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+    width: 100%;
+  }
+  
+  .Btncntip {
+    border-radius: 5px;
+    color: white;
+    width: 70%;
+    outline: none;
+    border: 1px solid #865dff;
+    padding: 10px 40px 10px 40px;
+    background: transparent;
+  }
+  
+  .name-input {
+    background: url('https://unpkg.com/ionicons@5.5.2/dist/svg/person-outline.svg')
+      no-repeat 10px center;
+    background-size: 20px;
+  }
+  
+  .email-input {
+    background: url('https://unpkg.com/ionicons@5.5.2/dist/svg/mail-outline.svg')
+      no-repeat 10px center;
+    background-size: 20px;
+  }
+  
+  .contact-input {
+    background: url('https://unpkg.com/ionicons@5.5.2/dist/svg/call-outline.svg')
+      no-repeat 10px center;
+    background-size: 20px;
+  }
+  
+  .BtnButtonContainer button {
+    border-radius: 5px;
+    font-weight: 900;
+    font-size: 0.8em;
+    width: 150px;
+    color: white;
+    border: none;
+    background: #865dff;
+    padding: 1em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 1em;
+  }
+  
+  .BtnButtonContainer button:hover {
+    opacity: 0.7;
+  }
+  
+  .BtnButtonContainer button:active {
+    transform: scale(0.95);
+  }
+  
+  @media (max-width: 1200px) {
+    .BtnContainer {
+      width: 70vw;
+    }
+    .BtnContactForm {
+      padding: 0 1rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .BtnContainer {
+      width: 80vw;
+    }
+    .BtnButtonContainer button {
+      width: 100px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .BtnContainer {
+      width: 90vw;
+    }
+    .BtnContactForm {
+      padding: 0 0.5rem;
+    }
+    .BtnButtonContainer button {
+      width: 120px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .BtnContainer {
+      width: 95vw;
+      padding: 30px;
+    }
+    .BtnButtonContainer {
+      justify-content: center;
+    }
+    .BtnButtonContainer button {
+      width: 100%;
+      margin-top: 1em;
+    }
+    .BtnContactForm {
+      padding: 0;
+    }
+  }
+  
+  @keyframes successAnime {
+    0% {
+      transform: perspective(5000px) rotateX(0deg) rotateZ(0deg);
+    }
+    20% {
+      transform: perspective(5000px) rotateX(80deg) rotateZ(90deg);
+    }
+    80% {
+      transform: perspective(5000px) rotateX(80deg) rotateZ(90deg);
+    }
+    100% {
+      transform: perspective(5000px) rotateX(0deg) rotateZ(0deg);
+    }
+  }
+  
